@@ -20,14 +20,14 @@ const CompanyLogos = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="flex  py-0  relative  md:py-28 flex-col justify-center items-center text-gray-600  bg-black pb-8">
+    <div className="flex  py-0  relative   flex-col my-32 justify-center items-center text-gray-600  bg-black pb-8">
       <div className="w-full slider relative">
         {" "}
         <div className="flex  slide-track  slideLogos mb-12 px-6 w-full justify-between flex-row items-center overflow-x-scroll md:overflow-hidden">
           {firstLogos.map((img) => (
             <img
               key={img}
-              className="h-6 md:h-8 mx-6 md:mx-2 slideImage slide"
+              className="h-6 md:h-8 mx-6 md:mx-2 slideImage "
               src={img}
               alt={img}
             />
@@ -41,7 +41,7 @@ const CompanyLogos = () => {
           {secondLogos.map((img) => (
             <img
               key={img}
-              className="h-6 md:h-8 mx-6 md:mx-2 slideImage slide"
+              className="h-6 md:h-8 mx-6 md:mx-2 slideImage "
               src={img}
               alt={img}
             />
